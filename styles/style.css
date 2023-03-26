@@ -113,7 +113,8 @@ section {
   background-color: var(--hover-effect);
 }
 
-.text-content .follow-me__links h2 {
+.text-content .follow-me__links h2,
+.resume__content section h2 {
   font-family: 'Krona One', sans-serif;
 }
 
@@ -169,3 +170,18 @@ footer {
 footer .icons8 {
   font-size: 10px;
 }
+
+/*###### Resume Page #####*/
+
+.resume__content section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+}
+
+.resume__content section h2 {
+  font-size: 20px;
+  color: var(--main-color);
+}
+
