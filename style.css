@@ -12,19 +12,17 @@
 }
 
 body {
-  width: 1920px;
-  height: 1151px;
+  /*width: 1920px;
+  height: 1151px;*/
   background-color: var(--background-color);
   color: #FFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 main {
   width: 1200px;
-  height: 600px;
-  
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
 }
 
 section {
@@ -97,6 +95,7 @@ figure img {
   width: 467px;
   height: 532px;
   border-radius: 16px;
+  object-fit: cover;
 }
 
 figure .img-effect {
@@ -104,8 +103,8 @@ figure .img-effect {
   position: absolute;
   width: 466px;
   height: 526px;
-  left: 1110px;
-  top: 250px;
+  left: 58%;
+  top: 21%;
   border: 3px solid var(--main-color);
   border-radius: 16px;
   z-index: -1;
