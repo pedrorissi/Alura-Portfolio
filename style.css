@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
 :root {
   --main-color: #98FF98;
@@ -12,8 +12,6 @@
 }
 
 body {
-  /*width: 1920px;
-  height: 1151px;*/
   background-color: var(--background-color);
   color: #FFF;
 }
@@ -58,26 +56,40 @@ section {
   margin-bottom: 38px;
 }
 
-.text-content ul {
+.text-content .follow-me__links {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-.text-content ul li{
-  background-color: var(--main-color);
+.text-content .follow-me__links li {
+  border: 2px solid var(--main-color);
   width: 280px;
   height: 79px;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 600;
-  border-radius: 16px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 
 .text-content ul li:hover {
   background-color: var(--hover-effect);
+}
+
+.text-content .follow-me__links h2 {
+  font-family: 'Krona One', sans-serif;
+}
+
+.follow-me__links li img {
+  width: 32px;
+  height: auto;
 }
 
 .text-content ul li a {
@@ -86,14 +98,14 @@ section {
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0em;
-  color: #000;
+  color: #FFF;
   text-decoration: none;
   
 }
 
 figure img {
-  width: 467px;
-  height: 532px;
+  width: 400px;
+  height: 500px;
   border-radius: 16px;
   object-fit: cover;
 }
@@ -101,9 +113,9 @@ figure img {
 figure .img-effect {
   box-sizing: border-box;
   position: absolute;
-  width: 466px;
-  height: 526px;
-  left: 58%;
+  width: 400px;
+  height: 500px;
+  left: 60%;
   top: 21%;
   border: 3px solid var(--main-color);
   border-radius: 16px;
