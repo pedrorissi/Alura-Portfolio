@@ -2,7 +2,7 @@
 
 :root {
   --main-color: #98FF98;
-  --hover-effect: #59B359;
+  --hover-effect: #244d24;
   --background-color: #202020;
 }
 
@@ -16,9 +16,39 @@ body {
   color: #FFF;
 }
 
+.header__section {
+  width: 100vw;
+  height: 80px;
+  
+}
+
+.header__section .navigation__menu {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.header__section .navigation__menu a {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+  text-decoration: none;
+  color: var(--main-color);
+    
+}
+
+.header__section .navigation__menu a:hover {
+  border-bottom: 3px solid var(--main-color);
+  
+}
+
 main {
   width: 1200px;
-  height: 100vh;
+  height: 92vh;
   display: flex;
   margin: 0 auto;
 }
@@ -120,4 +150,22 @@ figure .img-effect {
   border: 3px solid var(--main-color);
   border-radius: 16px;
   z-index: -1;
+}
+
+footer {
+  background-color: var(--main-color);
+  color: var(--background-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+footer .icons8 {
+  font-size: 10px;
 }
