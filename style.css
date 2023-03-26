@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --main-color: #98FF98;
+  --hover-effect: #59B359;
+  --background-color: #202020;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1920px;
+  height: 1151px;
+  background-color: var(--background-color);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 1200px;
+  height: 600px;
+  
+}
+
+section {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-content h1 {
+  width: 593px;
+  font-family: 'Krona One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 56px;
+  margin-bottom: 28px;
+}
+
+.text-content h1 span {
+  color: var(--main-color);
+
+}
+
+.text-content p {
+  width: 593px;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 38px;
+}
+
+.text-content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-content ul li{
+  background-color: var(--main-color);
+  width: 280px;
+  height: 79px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content ul li:hover {
+  background-color: var(--hover-effect);
+}
+
+.text-content ul li a {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  color: #000;
+  text-decoration: none;
+  
+}
+
+figure img {
+  width: 467px;
+  height: 532px;
+  border-radius: 16px;
+}
+
+figure .img-effect {
+  box-sizing: border-box;
+  position: absolute;
+  width: 466px;
+  height: 526px;
+  left: 1110px;
+  top: 250px;
+  border: 3px solid var(--main-color);
+  border-radius: 16px;
+  z-index: -1;
+}
