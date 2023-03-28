@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
 :root {
+  /*## Colors ##*/
   --main-color: #98FF98;
   --hover-effect: #244d24;
   --background-color: #202020;
+
+  --title: 'Krona One', sans-serif;
+  --subtitle: Montserrat, sans-serif;
 }
 
 *{
@@ -32,7 +36,7 @@ body {
 }
 
 .header__section .navigation__menu a {
-  font-family: Montserrat, sans-serif;
+  font-family: var(--subtitle);
   font-size: 24px;
   font-weight: 600;
   line-height: 29.26px;
@@ -48,7 +52,7 @@ body {
 
 main {
   width: 1200px;
-  height: 92vh;
+  height: 85vh;
   display: flex;
   margin: 0 auto;
 }
@@ -62,7 +66,7 @@ section {
 
 .text-content h1 {
   width: 593px;
-  font-family: 'Krona One', sans-serif;
+  font-family: var(--title);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -77,7 +81,7 @@ section {
 
 .text-content p {
   width: 593px;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--subtitle);
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -99,7 +103,7 @@ section {
   border: 2px solid var(--main-color);
   width: 280px;
   height: 79px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--subtitle);
   font-size: 24px;
   font-weight: 600;
   border-radius: 8px;
@@ -115,7 +119,7 @@ section {
 
 .text-content .follow-me__links h2,
 .resume__content section h2 {
-  font-family: 'Krona One', sans-serif;
+  font-family: var(--title);
 }
 
 .follow-me__links li img {
@@ -124,7 +128,7 @@ section {
 }
 
 .text-content ul li a {
-  font-family: Montserrat, sans-serif;
+  font-family: var(--subtitle);
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -156,10 +160,10 @@ figure .img-effect {
 footer {
   background-color: var(--main-color);
   color: var(--background-color);
-  font-family: Montserrat, sans-serif;
+  font-family: var(--subtitle);
   font-size: 16px;
   width: 100vw;
-  height: 80px;
+  height: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
