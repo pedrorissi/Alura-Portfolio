@@ -15,19 +15,15 @@
   padding: 0;
 }
 
+html,
 body {
   background-color: var(--background-color);
   color: #FFF;
-}
-
-.header__section {
-  width: 100vw;
-  height: 80px;
-  
+  font-size: 16px;
 }
 
 .header__section .navigation__menu {
-  width: 1200px;
+  max-width: 1200px;
   height: 100px;
   margin: 0 auto;
   display: flex;
@@ -37,7 +33,7 @@ body {
 
 .header__section .navigation__menu a {
   font-family: var(--subtitle);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 29.26px;
   text-decoration: none;
@@ -51,25 +47,30 @@ body {
 }
 
 main {
-  width: 1200px;
-  height: 85vh;
-  display: flex;
+  width: 100%;
+  height: 70vh;
   margin: 0 auto;
 }
 
 section {
-  width: inherit;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.text-content {
+  width: 60%;
+  height: 100%;
+  padding: 0 10%;
+}
+
 .text-content h1 {
-  width: 593px;
   font-family: var(--title);
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 56px;
   margin-bottom: 28px;
 }
@@ -80,9 +81,8 @@ section {
 }
 
 .text-content p {
-  width: 593px;
   font-family: var(--subtitle);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
@@ -101,10 +101,10 @@ section {
 
 .text-content .follow-me__links li {
   border: 2px solid var(--main-color);
-  width: 280px;
-  height: 79px;
+  width: 50%;
+  padding: 5% 0;
   font-family: var(--subtitle);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   border-radius: 8px;
   display: flex;
@@ -129,7 +129,7 @@ section {
 
 .text-content ul li a {
   font-family: var(--subtitle);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0em;
@@ -138,32 +138,38 @@ section {
   
 }
 
-figure img {
-  width: 400px;
-  height: 500px;
-  border-radius: 16px;
-  object-fit: cover;
+.figure__container {
+  width: 30%;
+  position: relative;
+  height: 50%;
 }
 
-figure .img-effect {
-  box-sizing: border-box;
+.figure__container img {
+  width: 350px;
+  height: 350px;
+  z-index: 3;
+  border-radius: 16px;
+  object-fit: cover;
   position: absolute;
-  width: 400px;
-  height: 500px;
-  left: 60%;
-  top: 21%;
+}
+
+.figure__container .img-effect {
+  position: absolute;
+  width: 350px;
+  height: 350px;
   border: 3px solid var(--main-color);
   border-radius: 16px;
-  z-index: -1;
+  z-index: 1;
 }
 
 footer {
   background-color: var(--main-color);
   color: var(--background-color);
   font-family: var(--subtitle);
-  font-size: 16px;
+  font-size: 1rem;
   width: 100vw;
-  height: 8vh;
+  height: 80px;
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,7 +178,7 @@ footer {
 }
 
 footer .icons8 {
-  font-size: 10px;
+  font-size: 0.62rem;
 }
 
 /*###### Resume Page #####*/
@@ -185,7 +191,17 @@ footer .icons8 {
 }
 
 .resume__content section h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--main-color);
 }
 
+/* #### Media Queries #### */
+
+@media only screen and (max-width: 600px) {
+  section {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 0 5%;
+  }
+  
+}
